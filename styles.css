@@ -92,3 +92,9 @@ footer {
     border-radius: 3px;
 }
 
+.project_image {
+    width: 400px; 
+    height: auto;
+    border-radius: 3px;
+}
+

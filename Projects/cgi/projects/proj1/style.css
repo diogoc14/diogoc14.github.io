@@ -1,0 +1,36 @@
+/**
+ * Daniel Ramos, N.62396
+ * Diogo Carvalho, N.62418
+ */
+.iterationCounter, .scaleCounter, .offsetCounter, .pointsCounter, .controls  {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    position: absolute;
+    z-index: 1;
+  }
+
+.scaleCounter {
+  top: 20px;
+}
+
+.offsetCounter {
+  top: 40px;
+}
+
+.pointsCounter {
+  top: 60px;
+}
+
+.controls {
+  top: 80px;
+}
+
+HTML, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    position: absolute;
+    overflow: hidden; /*  Disable scrollbars */
+    display: block;  /* No floating content on sides */
+}

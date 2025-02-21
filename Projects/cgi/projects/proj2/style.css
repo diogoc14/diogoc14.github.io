@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+}
+body {
+    /*display: flex;*/
+    margin: 0px;
+    overflow: hidden; /*  Disable scrollbars */
+    background-color: black;
+}
+
+.controls {
+    color: white;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    z-index: 1;
+}
+

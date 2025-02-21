@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narcissa</title>
+  <script type="text/javascript" src="Narcissa0.js"></script>
+  <script type="text/javascript" src="Narcissa.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    
+    p {
+      margin: 0;
+      padding: 5px 0;
+    }
+    
+    .centered {
+      text-align: center;
+    }
+    
+    #timer {
+      display: inline-block;
+      font-weight: bold;
+      text-align: center;
+      width: 60px;
+    }
+    
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    canvas {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #000000;
+      background-color: #ffffff;
+      width: 100%; /* Responsive width */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 1000px;
+      max-height: 520px;
+    }
+    
+    input[type="button"] {
+      padding: 8px 16px;
+      margin-right: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type="button"]:hover {
+      background-color: #45a049;
+    }
+    
+    #score {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body onload="onLoad();">
+  <h1>Welcome to Narcissa!</h1>
+  
+  <p><b>Authors</b> -- Diogo Carvalho, Daniel Ramos</p>
+  <p class="centered">Tempo: <span id="timer">00:00</span></p>
+  
+  <form name="form1">
+    <canvas id="canvas1" width="1120" height="640">
+      Your browser doesn't support the HTML5 CANVAS tag.
+    </canvas>
+    <p class="centered">
+      <input type="button" name="resumeButton" value="Resume" size="10" onclick="control.startTime()">
+      <input type="button" name="pauseButton" value="Pause" size="10" onclick="control.stopTime()">
+      <input type="button" name="musicButton" value="Music" size="10" onclick="playMusic()">
+      Body size: <span id="score">5</span>
+    </p>
+  </form>
+</body>
+
+</html>
